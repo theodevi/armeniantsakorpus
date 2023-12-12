@@ -74,6 +74,49 @@ def search_page():
                            query_string=queryString)
 
 
+@app.route('/')
+def main_page():  # put application's code here
+    return render_template('mainpage.html')
+
+@app.route('/index.html')
+def ind():  # put application's code here
+    return render_template('mainpage.html')
+
+@app.route('/about.html')
+def about_page():  # put application's code here
+    return render_template('about.html')
+
+@app.route('/news.html')
+def newspage():  # put application's code here
+    return render_template('news.html')
+
+@app.route('/newsbit1.html')
+def newsat1():  # put application's code here
+    return render_template('newsbit1.html')
+
+@app.route('/login.html')
+def login():
+    return render_template('login.html')
+
+@app.route('/admin.html')
+def admin():
+    return render_template('admin.html')
+
+
+@app.route('/visual_analysis.html')
+def vis():
+    return render_template('visual_analysis.html')
+
+@app.route('/mainpage.html')
+def mp():
+    return render_template('mainpage.html')
+@app.route('/frequencies.html')
+def freq():
+    return render_template('frequencies.html')
+
+@app.route('/ner_freq.html')
+def ner():
+    return render_template('ner_freq.html')
 @app.route('/search_sent_query/<int:page>')
 @app.route('/search_sent_query')
 @jsonp

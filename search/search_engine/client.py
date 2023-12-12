@@ -34,7 +34,7 @@ class SearchClient:
             # Connect to a non-default URL or supply username and password
             self.es = Elasticsearch([self.settings.elastic_url], timeout=esTimeout)
         else:
-            self.es = Elasticsearch(timeout=esTimeout)
+            self.es = Elasticsearch(['http://localhost:9200/'])
         self.es_ic = IndicesClient(self.es)
         self.qp = InterfaceQueryParser(settings_dir, self.settings)
         self.logging = 'none'   # none|query|hits

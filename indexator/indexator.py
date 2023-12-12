@@ -80,7 +80,7 @@ class Indexator:
             # Connect to a non-default URL or supply username and password
             self.es = Elasticsearch([self.settings['elastic_url']])
         else:
-            self.es = Elasticsearch()
+            self.es = Elasticsearch(['http://localhost:9200/'])
         self.es_ic = IndicesClient(self.es)
 
         self.shuffled_ids = [i for i in range(1, 1000000)]

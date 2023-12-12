@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="../static/fonts/icomoon/style.css">
+	<link rel="stylesheet" href="../static/fonts/feather/style.css">
+
+	<link rel="stylesheet" href="../static/css/tiny-slider.css">
+	<link rel="stylesheet" href="../static/css/aos.css">
+	<link rel="stylesheet" href="../static/css/glightbox.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+
+	<title>Армянский текст русской поэзии &mdash; главная страница.</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0" style="color:#1d2124">Армянский текст русской поэзии</a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+					<li class="has-children">
+						<a href="index.html" style="color:#1d2124">Главная страница</a>
+						<ul class="dropdown">
+							<li><a href="about.html" style="color:#1d2124">О нас</a></li>
+                            <li><a href="news.html" style="color:#1d2124">Новости проекта</a></li>
+						</ul>
+					</li>
+					<li><a href="/search" style="color:#1d2124">Корпус</a></li>
+					<li class="has-children">
+						<a href=# style="color:#1d2124">Словари и указатели</a>
+						<ul class="dropdown">
+							<li><a href="frequencies.html" style="color:#1d2124">Частотный словарь</a></li>
+                            <li><a href="ner_freq.html" style="color:#1d2124">Словарь онимов</a></li>
+                            <li><a href="lexical_combinations.html" style="color:#1d2124">Лексические комбинации</a></li>
+                            <li><a href="obrazy.html" style="color:#1d2124">Указатель образова</a></li>
+						</ul>
+					</li>
+					<li><a href="visual_analysis.html" style="color:#1d2124">Визуальный анализ</a></li>
+					<li><a href="bibliography.html" style="color:#1d2124">Библиография</a></li>
+                    <li><a href="login.html" style="color:#1d2124">Логин</a></li>
+				</ul>
+
+				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+    <div class="section bg-light">
+        <div class="container">
+            <h3 class="h5 mb-6">Заголовок</h3>
+            <input type="text" class="input-group-text">
+            <script>
+                function auto_height(elem) {  /* javascript */
+                    elem.style.height = '1px';
+                    elem.style.height = `${elem.scrollHeight}px`;
+                    }
+            </script>
+            <h3 class="h5 mb-6">Текст новости</h3>
+            <textarea rows="1" class="auto_height" onInput="auto_height(this)"></textarea>
+            <h3 class="h5 mb-6">Изображение</h3>
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="submit">
+        </div>
+    </div>
+
+    <div class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="widget">
+						<h3>Связаться с нами</h3>
+						<ul class="list-unstyled links">
+							<li><a href="https://t.me/theodeivi">По вопросам работы сайта и корпуса</a></li>
+							<li><a href="">По другим вопросам, связанным с проектом</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 --><!-- /.col-lg-4 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /.site-footer -->
+
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+
+<script src="../static/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/tiny-slider.js"></script>
+<script src="../static/js/aos.js"></script>
+<script src="../static/js/navbar.js"></script>
+<script src="../static/js/glightbox.min.js"></script>
+<script src="../static/js/rellax.min.js"></script>
+<script src="../static/js/custom.js"></script>
+</body>
+</html>
